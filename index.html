@@ -1633,6 +1633,308 @@
       margin-bottom: 2rem;
     }
 
+
+    /* ==========================================
+       PRICING / MEMBERSHIP SECTION
+       ========================================== */
+    .pricing-section {
+      padding: 100px 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pricing-sale-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      background: rgba(255, 15, 57, 0.1);
+      border: 1px solid rgba(255, 15, 57, 0.35);
+      border-radius: 40px;
+      padding: 0.6rem 1.8rem;
+      margin: 0 auto 2rem;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .pricing-sale-icon {
+      color: var(--accent-red);
+      font-size: 1rem;
+      animation: pulse-glow 2s infinite;
+    }
+
+    .pricing-sale-text {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 1.5px;
+      color: var(--accent-red);
+    }
+
+    .pricing-countdown {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .pricing-countdown-label {
+      font-size: 0.85rem;
+      color: var(--text-gray);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .pricing-timer-blocks {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .pricing-timer-block {
+      background: rgba(255, 15, 57, 0.08);
+      border: 1px solid rgba(255, 15, 57, 0.25);
+      border-radius: 8px;
+      padding: 0.5rem 0.9rem;
+      text-align: center;
+      min-width: 58px;
+    }
+
+    .pricing-timer-num {
+      display: block;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      color: var(--accent-red);
+      line-height: 1;
+    }
+
+    .pricing-timer-unit {
+      display: block;
+      font-size: 0.65rem;
+      color: var(--text-gray);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 2px;
+    }
+
+    .pricing-timer-colon {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem;
+      color: rgba(255, 15, 57, 0.4);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .pricing-card {
+      padding: 2rem 1.5rem;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: var(--transition-smooth);
+    }
+
+    .pricing-card:hover {
+      border-color: rgba(255, 15, 57, 0.3);
+      transform: translateY(-4px);
+    }
+
+    .pricing-card--featured {
+      background: rgba(255, 15, 57, 0.07);
+      border: 1px solid rgba(255, 15, 57, 0.45);
+      box-shadow: 0 0 30px rgba(255, 15, 57, 0.1);
+    }
+
+    .pricing-card--featured:hover {
+      box-shadow: 0 0 40px rgba(255, 15, 57, 0.2);
+    }
+
+    .pricing-best-badge {
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      background: var(--accent-red);
+      color: var(--text-white);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      padding: 4px 14px;
+      border-radius: 0 16px 0 10px;
+      text-transform: uppercase;
+    }
+
+    .pricing-trial-badge {
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-gray);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      padding: 4px 14px;
+      border-radius: 0 16px 0 10px;
+      text-transform: uppercase;
+    }
+
+    .pricing-free-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(255, 15, 57, 0.1);
+      border: 1px solid rgba(255, 15, 57, 0.25);
+      border-radius: 6px;
+      padding: 3px 10px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #ff6680;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 1rem;
+      width: fit-content;
+    }
+
+    .pricing-duration {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      color: var(--text-white);
+      letter-spacing: 1px;
+      line-height: 1;
+      margin-bottom: 0.8rem;
+    }
+
+    .pricing-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.7rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .pricing-old-price {
+      font-size: 1rem;
+      color: var(--text-dim);
+      text-decoration: line-through;
+    }
+
+    .pricing-new-price {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.2rem;
+      color: var(--text-white);
+      line-height: 1;
+    }
+
+    .pricing-card--featured .pricing-new-price {
+      color: #ff6680;
+    }
+
+    .pricing-per-month {
+      font-size: 0.78rem;
+      color: var(--text-gray);
+      margin-bottom: 1rem;
+    }
+
+    .pricing-divider {
+      height: 1px;
+      background: rgba(255, 255, 255, 0.06);
+      margin-bottom: 0.8rem;
+    }
+
+    .pricing-saving {
+      font-size: 0.82rem;
+      color: var(--text-gray);
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .pricing-saving strong {
+      color: #ff6680;
+    }
+
+    .pricing-btn {
+      width: 100%;
+      text-align: center;
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+    }
+
+    .pricing-cta-strip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 14px;
+      padding: 1.5rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .pricing-cta-text {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-size: 1rem;
+      color: var(--text-gray);
+    }
+
+    .pricing-cta-text i {
+      color: var(--accent-red);
+      font-size: 1.1rem;
+    }
+
+    .pricing-cta-text strong {
+      color: var(--text-white);
+    }
+
+    /* Pricing responsive */
+    @media (max-width: 991px) {
+      .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .pricing-cta-strip {
+        flex-direction: column;
+        text-align: center;
+      }
+      .pricing-cta-text {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .pricing-grid {
+        grid-template-columns: 1fr;
+      }
+      .pricing-sale-banner {
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+      }
+      .pricing-sale-text {
+        font-size: 0.78rem;
+        letter-spacing: 1px;
+      }
+      .pricing-timer-block {
+        min-width: 48px;
+        padding: 0.4rem 0.6rem;
+      }
+      .pricing-timer-num {
+        font-size: 1.6rem;
+      }
+      .pricing-countdown {
+        gap: 0.8rem;
+      }
+    }
+
     /* ==========================================
        RESPONSIVE DESIGN MEDIA QUERIES
        ========================================== */
@@ -2324,6 +2626,7 @@
 
       <!-- Balanced Navigation Links (Right Side) -->
       <nav class="nav-right">
+        <a href="#pricing" class="nav-link">Pricing</a>
         <a href="#gallery" class="nav-link">Gallery</a>
         <a href="#testimonials" class="nav-link">Reviews</a>
         <a href="#contact" class="nav-link join-btn-nav">Join Now</a>
@@ -2343,6 +2646,7 @@
     <a href="#about" class="nav-link mobile-nav-link">About</a>
     <a href="#why-us" class="nav-link mobile-nav-link">Why Us</a>
     <a href="#programs" class="nav-link mobile-nav-link">Programs</a>
+    <a href="#pricing" class="nav-link mobile-nav-link">Pricing</a>
     <a href="#gallery" class="nav-link mobile-nav-link">Gallery</a>
     <a href="#testimonials" class="nav-link mobile-nav-link">Reviews</a>
     <a href="#contact" class="nav-link mobile-nav-link join-btn-nav" style="border: 1px solid var(--accent-red); margin-top: 1rem;">Join Now</a>
@@ -2670,6 +2974,129 @@
       <span>•</span>
     </div>
   </div>
+
+
+
+  <!-- ==========================================
+       SUMMER BONANZA PRICING / MEMBERSHIP
+       ========================================== -->
+  <section class="pricing-section" id="pricing">
+    <div class="glow-orb" style="top: 10%; right: 5%;"></div>
+    <div class="glow-orb" style="bottom: 10%; left: 5%;"></div>
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="section-title-wrapper reveal">
+        <h2 class="section-title">Membership <span>Pricing</span></h2>
+        <p class="section-subtitle">Buy now, choose your start date. Limited spots available.</p>
+      </div>
+
+      <!-- Sale Banner -->
+      <div class="pricing-sale-banner reveal">
+        <span class="pricing-sale-icon"><i class="fa-solid fa-fire-flame-simple"></i></span>
+        <span class="pricing-sale-text">SUMMER BONANZA SALE &nbsp;&middot;&nbsp; VALID TILL 15 JUNE 2026 &nbsp;&middot;&nbsp; LIMITED TIME ONLY</span>
+      </div>
+
+      <!-- Countdown Timer -->
+      <div class="pricing-countdown reveal">
+        <span class="pricing-countdown-label">Offer ends in</span>
+        <div class="pricing-timer-blocks">
+          <div class="pricing-timer-block">
+            <span class="pricing-timer-num" id="p-days">00</span>
+            <span class="pricing-timer-unit">Days</span>
+          </div>
+          <span class="pricing-timer-colon">:</span>
+          <div class="pricing-timer-block">
+            <span class="pricing-timer-num" id="p-hours">00</span>
+            <span class="pricing-timer-unit">Hrs</span>
+          </div>
+          <span class="pricing-timer-colon">:</span>
+          <div class="pricing-timer-block">
+            <span class="pricing-timer-num" id="p-mins">00</span>
+            <span class="pricing-timer-unit">Min</span>
+          </div>
+          <span class="pricing-timer-colon">:</span>
+          <div class="pricing-timer-block">
+            <span class="pricing-timer-num" id="p-secs">00</span>
+            <span class="pricing-timer-unit">Sec</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing Cards Grid -->
+      <div class="pricing-grid">
+
+        <!-- 12 Month — Best Value -->
+        <div class="pricing-card pricing-card--featured glass-card reveal-scale">
+          <div class="pricing-best-badge">Best Value</div>
+          <div class="pricing-free-tag"><i class="fa-solid fa-gift"></i> +3 Months FREE</div>
+          <div class="pricing-duration">12 Months</div>
+          <div class="pricing-price-row">
+            <span class="pricing-old-price">&#8377;9,990</span>
+            <span class="pricing-new-price">&#8377;7,990</span>
+          </div>
+          <div class="pricing-per-month">&#8776; &#8377;533 / month</div>
+          <div class="pricing-divider"></div>
+          <div class="pricing-saving">You save <strong>&#8377;2,000</strong> &middot; Effectively <strong>15 months</strong></div>
+          <a href="tel:6289772863" class="btn btn-primary pricing-btn">Claim This Plan</a>
+        </div>
+
+        <!-- 6 Month -->
+        <div class="pricing-card glass-card reveal-scale" style="transition-delay:0.1s;">
+          <div class="pricing-free-tag"><i class="fa-solid fa-gift"></i> +2 Months FREE</div>
+          <div class="pricing-duration">6 Months</div>
+          <div class="pricing-price-row">
+            <span class="pricing-old-price">&#8377;6,990</span>
+            <span class="pricing-new-price">&#8377;5,990</span>
+          </div>
+          <div class="pricing-per-month">&#8776; &#8377;748 / month</div>
+          <div class="pricing-divider"></div>
+          <div class="pricing-saving">You save <strong>&#8377;1,000</strong> &middot; Effectively <strong>8 months</strong></div>
+          <a href="tel:6289772863" class="btn btn-secondary pricing-btn">Claim This Plan</a>
+        </div>
+
+        <!-- 3 Month -->
+        <div class="pricing-card glass-card reveal-scale" style="transition-delay:0.2s;">
+          <div class="pricing-free-tag"><i class="fa-solid fa-gift"></i> +1 Month FREE</div>
+          <div class="pricing-duration">3 Months</div>
+          <div class="pricing-price-row">
+            <span class="pricing-old-price">&#8377;4,500</span>
+            <span class="pricing-new-price">&#8377;4,200</span>
+          </div>
+          <div class="pricing-per-month">&#8776; &#8377;1,050 / month</div>
+          <div class="pricing-divider"></div>
+          <div class="pricing-saving">You save <strong>&#8377;300</strong> &middot; Effectively <strong>4 months</strong></div>
+          <a href="tel:6289772863" class="btn btn-secondary pricing-btn">Claim This Plan</a>
+        </div>
+
+        <!-- 1 Month -->
+        <div class="pricing-card pricing-card--trial glass-card reveal-scale" style="transition-delay:0.3s;">
+          <div class="pricing-trial-badge">Try It</div>
+          <div class="pricing-duration">1 Month</div>
+          <div class="pricing-price-row">
+            <span class="pricing-new-price">&#8377;1,500</span>
+          </div>
+          <div class="pricing-per-month">+ &#8377;500 one-time admission fee</div>
+          <div class="pricing-divider"></div>
+          <div class="pricing-saving">No commitment. Walk in, get started.</div>
+          <a href="tel:6289772863" class="btn btn-secondary pricing-btn">Claim This Plan</a>
+        </div>
+
+      </div>
+
+      <!-- Bottom CTA Strip -->
+      <div class="pricing-cta-strip reveal">
+        <div class="pricing-cta-text">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Available exclusively at <strong>Aesthetic Chamber, Kolkata</strong></span>
+        </div>
+        <a href="tel:6289772863" class="btn btn-primary">
+          <i class="fa-solid fa-phone" style="margin-right:8px;"></i>Call Now: 6289772863
+        </a>
+      </div>
+
+    </div>
+  </section>
 
   <!-- ==========================================
        INSTAGRAM INSPIRED GALLERY
@@ -3207,6 +3634,35 @@
           card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
         });
       });
+
+
+      /* ==========================================
+         10. PRICING COUNTDOWN TIMER
+         ========================================== */
+      const pricingEnd = new Date('2026-06-15T23:59:59');
+      const pricingTick = () => {
+        const now = new Date();
+        const diff = pricingEnd - now;
+        const pd = document.getElementById('p-days');
+        const ph = document.getElementById('p-hours');
+        const pm = document.getElementById('p-mins');
+        const ps = document.getElementById('p-secs');
+        if (!pd) return;
+        if (diff <= 0) {
+          pd.textContent = ph.textContent = pm.textContent = ps.textContent = '00';
+          return;
+        }
+        const days  = Math.floor(diff / 86400000);
+        const hours = Math.floor((diff % 86400000) / 3600000);
+        const mins  = Math.floor((diff % 3600000) / 60000);
+        const secs  = Math.floor((diff % 60000) / 1000);
+        pd.textContent = String(days).padStart(2, '0');
+        ph.textContent = String(hours).padStart(2, '0');
+        pm.textContent = String(mins).padStart(2, '0');
+        ps.textContent = String(secs).padStart(2, '0');
+      };
+      pricingTick();
+      setInterval(pricingTick, 1000);
 
 
       /* ==========================================
