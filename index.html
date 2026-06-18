@@ -1634,7 +1634,7 @@
     /* Desktop Large */
     @media (max-width: 1200px) {
       .hero-title {
-        font-size: 3.8rem;
+        font-size: clamp(4rem, 8vw, 6.5rem);
       }
       .gallery-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -1703,6 +1703,10 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
+      .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
       .testimonials-grid {
         grid-template-columns: 1fr;
         max-width: 600px;
@@ -1724,6 +1728,34 @@
       }
     }
 
+    /* Tablet Portrait */
+    @media (max-width: 768px) {
+      .why-grid, .programs-grid {
+        grid-template-columns: 1fr;
+      }
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      .form-full-width {
+        grid-column: span 1;
+      }
+      .about-main-img-box {
+        height: 360px;
+      }
+      .preloader-content {
+        padding: 3rem 1.5rem;
+      }
+      .preloader-brand-logo {
+        height: 130px;
+      }
+      .preloader-title {
+        font-size: 2.2rem;
+      }
+    }
+
     /* Mobile Portrait */
     @media (max-width: 576px) {
       .section-title {
@@ -1732,6 +1764,10 @@
 
       .hero-title {
         font-size: 2.8rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.4rem;
       }
 
       .hero-actions {
@@ -1747,6 +1783,7 @@
       .hero-stats {
         flex-wrap: wrap;
         gap: 2rem;
+        justify-content: center;
       }
 
       .about-cards-grid {
@@ -1758,23 +1795,54 @@
       }
 
       .gallery-item {
-        height: 300px;
+        height: 280px;
       }
 
       .lead-card {
-        padding: 2.5rem 1.5rem;
-      }
-
-      .form-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .form-full-width {
-        grid-column: span 1;
+        padding: 2.5rem 1.25rem;
       }
 
       .about-floating-card {
         left: 10px;
+        bottom: 20px;
+        padding: 1rem 1.2rem;
+      }
+      
+      .audio-control-widget {
+        bottom: 20px;
+        right: 20px;
+      }
+      
+      .audio-toggle-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 1rem;
+      }
+      
+      .audio-track-info {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+      }
+
+      .ribbon-track span {
+        font-size: 1.4rem;
+      }
+      
+      .scrolling-ribbon {
+        padding: 0.8rem 0;
+      }
+    }
+
+    /* Extra Small Screen Optimization */
+    @media (max-width: 380px) {
+      .hero-title {
+        font-size: 2.3rem;
+      }
+      .preloader-title {
+        font-size: 1.8rem;
+      }
+      .preloader-brand-logo {
+        height: 100px;
       }
     }
 
@@ -2914,7 +2982,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 Aesthetic Chamber. All Rights Reserved. Designed by Elite Webworks.</p>
+        <p>&copy; 2026 Aesthetic Chamber. All Rights Reserved. Designed by VMC Tech India.</p>
         <div class="footer-bottom-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
