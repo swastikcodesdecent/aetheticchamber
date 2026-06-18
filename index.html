@@ -36,6 +36,11 @@
       --glow-shadow: 0 0 20px var(--accent-red-glow);
     }
 
+    html {
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -54,6 +59,7 @@
       color: var(--text-white);
       font-family: 'Inter', sans-serif;
       overflow-x: hidden;
+      max-width: 100%;
       line-height: 1.6;
     }
 
@@ -1787,13 +1793,27 @@
       }
 
       .hero-tag {
-        font-size: 0.75rem;
+        font-size: 0.72rem;
+        letter-spacing: 1px;
+        padding: 0.35rem 0.8rem;
         margin-bottom: 1.2rem;
+        max-width: 100%;
+        white-space: normal;
+        text-align: center;
       }
 
       .hero-desc {
         font-size: 1rem;
         margin-bottom: 1.8rem;
+      }
+
+      .preloader-title {
+        font-size: clamp(1.6rem, 8vw, 2.2rem);
+        letter-spacing: 1px;
+      }
+
+      .preloader-content {
+        padding: 2.5rem 1.25rem;
       }
 
       .hero-actions {
@@ -1880,12 +1900,8 @@
       overflow: hidden;
       background: var(--accent-red);
       padding: 1.2rem 0;
-      width: 100vw;
+      width: 100%;
       position: relative;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
       transform: rotate(-1.5deg) translateY(-20px);
       box-shadow: 0 10px 30px rgba(255, 15, 57, 0.25);
       z-index: 10;
