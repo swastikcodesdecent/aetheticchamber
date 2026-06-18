@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Aesthetic Chamber</title>
+  <meta name="description" content="Privacy Policy for Aesthetic Chamber fitness sanctuary. Learn how we handle and protect your personal parameters, details, and schedules.">
+  
+  <!-- Premium Fonts from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome CDN for Modern Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* ==========================================
+       CSS CUSTOM VARIABLES & RESET
+       ========================================== */
+    :root {
+      --bg-dark: #060608;
+      --bg-dark-rgb: 6, 6, 8;
+      --bg-card: rgba(255, 255, 255, 0.02);
+      --bg-card-hover: rgba(255, 255, 255, 0.05);
+      --accent-red: #ff0f39;
+      --accent-red-rgb: 255, 15, 57;
+      --accent-red-glow: rgba(255, 15, 57, 0.4);
+      --accent-red-dim: rgba(255, 15, 57, 0.15);
+      --text-white: #ffffff;
+      --text-gray: #9ba0a6;
+      --text-dim: #606469;
+      --border-glass: rgba(255, 255, 255, 0.07);
+      --border-glass-hover: rgba(255, 15, 57, 0.35);
+      --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(255,0,0,.08),
+          transparent 70%
+        ),
+        #050505;
+      color: var(--text-white);
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><g fill='%23ffffff' fill-opacity='0.02'><rect x='10' y='40' width='8' height='20' rx='2'/><rect x='20' y='30' width='6' height='40' rx='2'/><rect x='26' y='47' width='48' height='6' rx='1'/><rect x='74' y='30' width='6' height='40' rx='2'/><rect x='82' y='40' width='8' height='20' rx='2'/></g></svg>");
+      background-size: 160px 160px;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Bebas Neue', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 400;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-dark);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 15, 57, 0.3);
+      border-radius: 4px;
+      transition: var(--transition-smooth);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--accent-red);
+    }
+
+    /* Header Styling */
+    .header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      z-index: 1000;
+      background: transparent;
+      display: flex;
+      align-items: center;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      width: 100%;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .logo img {
+      height: 60px;
+      width: auto;
+      filter: drop-shadow(0 0 15px rgba(255,0,0,.6));
+      transition: var(--transition-smooth);
+    }
+
+    .btn-back {
+      background: rgba(255, 15, 57, 0.1);
+      border: 1px solid var(--accent-red);
+      padding: 0.5rem 1.5rem;
+      border-radius: 6px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      color: var(--text-white);
+      transition: var(--transition-smooth);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-back:hover {
+      background: var(--accent-red);
+      box-shadow: 0 0 15px var(--accent-red-glow);
+      transform: translateY(-2px);
+    }
+
+    /* Policy Layout */
+    .policy-hero {
+      padding: 160px 2rem 60px;
+      text-align: center;
+      position: relative;
+    }
+
+    .text-gradient {
+      background: linear-gradient(135deg, #ffffff 10%, var(--accent-red) 85%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: clamp(3.5rem, 8vw, 5.5rem);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    .policy-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-gray);
+      letter-spacing: 1px;
+    }
+
+    .policy-container {
+      max-width: 900px;
+      margin: 0 auto 100px;
+      padding: 0 2rem;
+    }
+
+    .glass-panel {
+      background: var(--bg-card);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid var(--border-glass);
+      border-radius: 20px;
+      padding: 4rem 3.5rem;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      transition: var(--transition-smooth);
+    }
+
+    .glass-panel:hover {
+      border-color: var(--border-glass-hover);
+      box-shadow: 0 12px 40px 0 rgba(255, 15, 57, 0.08);
+    }
+
+    .policy-section {
+      margin-bottom: 3rem;
+    }
+
+    .policy-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .policy-section h2 {
+      font-size: 1.8rem;
+      color: var(--text-white);
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      border-bottom: 1px solid rgba(255, 15, 57, 0.15);
+      padding-bottom: 0.5rem;
+    }
+
+    .policy-section h2 i {
+      color: var(--accent-red);
+      font-size: 1.4rem;
+      text-shadow: 0 0 8px var(--accent-red-glow);
+    }
+
+    .policy-section p {
+      color: var(--text-gray);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+
+    .policy-section ul {
+      list-style-type: none;
+      margin-left: 1.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .policy-section ul li {
+      position: relative;
+      color: var(--text-gray);
+      font-size: 0.95rem;
+      margin-bottom: 0.6rem;
+      padding-left: 1.2rem;
+    }
+
+    .policy-section ul li::before {
+      content: "•";
+      color: var(--accent-red);
+      font-size: 1.5rem;
+      position: absolute;
+      left: 0;
+      top: -3px;
+    }
+
+    /* Footer Styling */
+    .footer {
+      background: #030304;
+      border-top: 1px solid var(--border-glass);
+      padding: 40px 2rem;
+      text-align: center;
+    }
+
+    .footer p {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+    }
+
+    /* Staggered Animations */
+    .fade-in {
+      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .glass-panel {
+        padding: 2.5rem 1.5rem;
+      }
+      .policy-section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="nav-logo logo">
+        <img src="images/download.png" alt="Aesthetic Chamber Logo">
+      </a>
+      <a href="index.html" class="btn-back">
+        <i class="fa-solid fa-arrow-left"></i> Back To Chamber
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="policy-hero fade-in">
+    <h1 class="text-gradient">PRIVACY POLICY</h1>
+    <p class="policy-subtitle">AESTHETIC CHAMBER • EFFECTIVE DATE: JUNE 18, 2026</p>
+  </section>
+
+  <!-- Policy Content -->
+  <main class="policy-container fade-in" style="animation-delay: 0.15s;">
+    <div class="glass-panel">
+      
+      <div class="policy-section">
+        <h2><i class="fa-solid fa-shield-halved"></i> 1. Introduction</h2>
+        <p>At Aesthetic Chamber, we respect your privacy and are committed to protecting the personal data you share with us. This Privacy Policy explains how we collect, process, and secure your data when you visit our sanctuary, fill out our consultation forms, or use our digital platforms.</p>
+      </div>
+
+      <div class="policy-section">
+        <h2><i class="fa-solid fa-database"></i> 2. Data We Collect</h2>
+        <p>To provide custom elite training coaching and maintain sanctuary administration, we collect the following metrics:</p>
+        <ul>
+          <li><strong>Personal Coordinates</strong>: Full name, phone number, email address.</li>
+          <li><strong>Fitness & Health Profiles</strong>: Current fitness level, training history, body targets, and consultation slot preferences.</li>
+          <li><strong>Digital Signals</strong>: Technical metrics including IP addresses, cookies, browser type, and navigation formats.</li>
+        </ul>
+      </div>
+
+      <div class="policy-section">
+        <h2><i class="fa-solid fa-gears"></i> 3. How We Use Your Data</h2>
+        <p>Your parameters are processed strictly for the optimization of your training path:</p>
+        <ul>
+          <li>Scheduling and confirming consultations.</li>
+          <li>Developing custom hypertrophy, strength, or fat loss coaching programs.</li>
+          <li>Communicating schedules, announcements, and official notices.</li>
+          <li>Improving the interactive visual and technical performance of our landing page.</li>
+        </ul>
+      </div>
+
+      <div class="policy-section">
+        <h2><i class="fa-solid fa-lock"></i> 4. Data Security</h2>
+        <p>We deploy standard encryption protocols and secure database configurations to protect your details against unauthorized access, manipulation, or leakage. Your personal parameters are never sold, rented, or traded with third-party advertising companies.</p>
+      </div>
+
+      <div class="policy-section">
+        <h2><i class="fa-solid fa-user-check"></i> 5. Your Rights</h2>
+        <p>You maintain absolute control over your profile parameters inside the Chamber. You may request to:</p>
+        <ul>
+          <li>Review or access the parameters we have logged.</li>
+          <li>Correct or update inaccurate parameters.</li>
+          <li>Completely purge and delete your parameter records from our active coaching engines.</li>
+        </ul>
+      </div>
+
+      <div class="policy-section">
+        <h2><i class="fa-solid fa-envelope"></i> 6. Contact Information</h2>
+        <p>If you have any questions, coordinates updates, or parameter deletion requests, connect with our administration directly:</p>
+        <p>
+          <strong>Official Address</strong>: 12/A Bansdroni Main Road, Near Metro Station, Kolkata, West Bengal, India<br>
+          <strong>Official Email</strong>: <a href="mailto:aestheticchamberv1@gmail.com" style="color: var(--accent-red); font-weight: 600;">aestheticchamberv1@gmail.com</a><br>
+          <strong>Hotline Support</strong>: <a href="tel:+916289772863" style="color: var(--accent-red); font-weight: 600;">+91 62897 72863</a>
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Aesthetic Chamber. All Rights Reserved. Designed by VMC Tech India.</p>
+  </footer>
+
+</body>
+</html>
